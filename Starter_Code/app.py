@@ -12,7 +12,7 @@ from sqlalchemy import create_engine, func
 
 
 # reflect an existing database into a new model
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine(f'sqlite:///{db_path}')
 Base = automap_base()
 
 # reflect the tables
